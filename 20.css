@@ -1,0 +1,126 @@
+*{padding: 0;margin: 0;box-sizing: border-box;text-decoration: none;list-style: none;  }
+
+.contenar{width: 100%;height:auto;background: darkviolet;position: relative;}
+
+.heding{width: 100%;height: 150px; background-color: yellow;display: inline-block;}
+
+ .hori{float: right; margin: 1px;}
+
+ .hori li{display: inline-block;margin: 3px;line-height: 20px;font-size: 28px;}
+
+ #logo{float: left;font-size: 30px;text-shadow: 2px 3px 4px black;line-height: 30px;
+       margin-top:20px;margin-left: 20px; font-weight: 400;font-family:initial;font-family: a 'Arial Narrow', Arial, sans-serif serif;}
+       
+
+#logo a{color:blue;}
+
+  .para{margin-top:20px;margin-left: 30px;}  
+   
+  #check,.menubar{display: none;}
+
+  i{padding: 0px 10px 4px 20px;color: green;}
+
+  .num{display: none;}
+
+  /*   ------------------------------------ chere index in body--------------------------------------*/
+
+
+.chere{height: 90vh;width: 94%;}
+#photo{height: 90vh;width:100%;}
+.set{width: 100%; height: auto;padding: 10px 20px 20px 20px;align-items: center;border-bottom: none;
+  justify-content: center;display: flex;text-align: center};
+
+
+/* ------------------ 3 box map--------------------*/
+
+.child1{height: 200px;width: 300px;border:2px solid black;}
+.child2{height: 220px;width: 300px;border:2px solid black;}
+.child3{height: 220px;width: 300px;border:2px solid black;}
+.child4{height: 220px;width: 300px;border:2px solid black;}
+
+#ple{height: 220px;width: 300px;z-index: -1;}
+
+.three{height: 20px; width: 300px;background-color: rgba(34, 10, 10,0.8); color: white;position: absolute;bottom: 0;
+  font-size: 22px;padding-bottom:25px;text-align:center;} 
+.child1,.child2,.child3,.child4 { overflow:hidden; position: relative;object-fit: cover;}
+.set{text-align: center;}
+.set3 li{display: inline-block;padding: 20px;text-align: left;}
+
+.set{text-align: center;}
+/* ----------------- End three box --------------------*/
+
+
+
+  /*   ------------------------------------End Chere indeex in body--------------------------------------*/
+
+  /*   ------------------------------------Imsges Arregment in body--------------------------------------*/
+  
+    .no1, .no2 ,.no3, .no4, .no5, .no6 {width: 250px;height:auto;
+    
+    overflow: hidden;
+    position: relative;
+    }
+    .space{padding: 1px;font-size: 18px;}
+    .big{font-size: 30px;margin-top: 1px;}
+.photo li{
+        display: inline-block;
+        padding: 20px;   }
+    .photo{text-align: center;  }
+ .bot{height: 20px; width: 250px;background-color: rgba(34, 10, 10,0.8); color: white;position: absolute;bottom: 0;
+   font-size: 22px;padding-bottom:25px;text-align:center;} 
+   /*--------------------------------- End Images Arrangment ____------------------*/
+
+
+/*------------------------------------footer section working----------------*/
+footer{float:left;font-family: Arial;background-color: rgba(2, 2, 2,.9);text-align: center;height: auto;width: 100%}
+section{ color: white;display: inline-block;padding:30px;text-align: center; }
+section h2{text-align: center;}
+
+/*------------------------------------End footer section working----------------*/
+
+
+
+
+/* -------------------------- Nave bar --------------------*/
+@media(max-width:700px){
+  .num{height: 50px;width: 200px;color:red;padding: 5px;margin-left: 10px;font-weight:bold ;display: inline-block;}
+  .heding{width: 100%;height: 100px;}
+  .set{height: 350px;width: 100%;display: inline-block;padding-bottom: 4px;}
+  .chere{height: 250px;width: 100%;border: 1px solid black;}
+  #photo{height: 250px;width: 100%;padding: 0px;}
+  #logo{font-size: 20px;}
+  .hori{display: none;}
+.menubar{position: absolute;
+  width: 100%;
+  top:-100px;
+  display: block;
+  height: 100px;
+  text-align: center;
+  z-index:0;
+  background-color: rgba(52, 116, 52,.9);
+  transition: all ease-in-out .7s;}
+
+  .child2{width: 280px}
+.child3{width: 280px}
+.child4{width: 280px;}
+
+
+  .menubar ul li{ padding:5px;border-top: 1px  solid yellow;margin-top: 5px;}
+  .menubar ul li:hover{background-color: yellowgreen;}
+
+.button{width: 22px;height: 22px;cursor: pointer;color: black;float: right;font-size: 20px;
+  position: absolute;top:20px;right: 30px;z-index: 1;background-color:none;
+}
+.spiner{height: 3px;background-color: black;}
+.spiner.mid,.spiner.bottom{margin-top: 3px;}
+#check:checked~.menubar{top:0;}
+#check:checked ~.button>.spiner.top{transform: rotate(135deg) ;margin-top: 8px;transition: all .7s;}
+#check:checked ~.button >.spiner.bottom{transform: rotate(-135deg);margin-top: -9px;}
+#check:checked ~.button >.spiner.mid{opacity: 0;}
+ 
+
+.set3 li{display: inline-block;padding: 20px;text-align:center;}
+
+
+}
+ /* -------------------------- END Nave bar --------------------*/
